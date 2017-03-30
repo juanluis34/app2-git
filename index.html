@@ -1,0 +1,329 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>segunda aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema-app1.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body>
+
+  <div data-role="page" id="Principal" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Telefonia celular en Mexico </h1>
+   </div>
+   <div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+      <h1> Telefono Celular </h1>
+       <div>
+         <p>Este es un celular: </p>
+         <br>
+         </div>
+          <div>
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','imagenes/celular.jpg',1)"><img src="imagenes/cel.jpg" width="399" height="300" id="Image8"></a>
+           </div>
+       </div>
+    </div>
+    <div>
+      <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+      <li class="ui-first-child ui-last-child">
+        <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+          <h2>Definicion </h2>
+          <p> Se muestran imagenes de celular </p>
+        </a>
+      </li>
+      <li class="ui-first-child ui-last-child">
+        <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2> Historia de la Telefonia Celular </h2>
+           <p>  Se muestra informacion de la historia del celular </p>
+        </a>
+      </li>
+      <li class="ui-first-child ui-last-child">
+        <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2> Clasificacion </h2>
+           <p> Se muestran las gamas que existen </p>
+        </a>
+      </li>     
+       <li class="ui-first-child ui-last-child">
+        <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2> Compañias en Mexico </h2>
+           <p> Se muestran las compañias mas importantes en Mexico  </p>
+        </a>
+       </li>               
+       <li class="ui-first-child ui-last-child">
+        <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+           <h2>Telefonos del Futuro  </h2>
+           <p> Se muestran algunas imagenes de los telefonos el futuro </p>
+        </a>
+       </li> 
+      </ul>  
+    </div>
+    <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+      <div>
+        <img src="imagenes/logo.png" width="46" height="46">
+      </div>  
+      <div>
+         <h4>Aplicación dos </h4>
+         <h4> Juan Luis Vazquez Morales </h4>
+      </div>
+    </div> 
+    </div> 
+    <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1> DEFINICIÓN: </h1>
+     </div>
+     <div data-role="content" align="center">
+         <div data-role="collapsible" data-content-theme="false">
+             <h1> Primer Ejemplo Teléfono Celular </h1>
+           <div>
+            <p>Este es un celular: </p>
+           <br>
+           </div>
+           <div >
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','imagenes/celular1.jpg',1)"><img src="imagenes/celular2.jpg"  width="399" height="300" id="Image1" ></a>
+           </div>
+         </div>
+         <div data-role="collapsible" data-content-theme="false">
+             <h1> Segundo Ejemplo Teléfono Celular </h1>
+           <div>
+            <p>Este es un celular: </p>
+           <br>
+           </div>
+           <div >
+  <p class="estilo2"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','imagenes/celular3.jpg',1)"><img src="imagenes/celular4.jpg" alt="sustitucion2" name="Image2" width="399" height="300" id="Image2" align="middle"></a></p>
+  <p align="center" class="estilo2">&nbsp;</p>
+           </div>
+      </div>
+      <div>
+       <h3 align="justify"> 
+  La telefonía móvil o telefonía celular es un medio de comunicación inalámbrico a través de ondas electromagnéticas. Como cliente de este tipo de redes, se utiliza un dispositivo denominado teléfono móvil o teléfono celular. El teléfono móvil o celular es un dispositivo inalámbrico electrónico que permite tener acceso a la red de telefonía celular o móvil. Se denomina celular debido a las antenas repetidoras que conforman la red, cada una de las cuales es una célula, si bien existen redes telefónicas móviles satelitales. Su principal característica es su portabilidad, que permite comunicarse desde casi cualquier lugar
+       </h3>
+      </div>
+     <div data-role="footer" data-theme="b" data-position="fixed">     
+       <h4> Aplicacion dos, JLVM </h4>
+     </div>
+    </div>
+   </div>
+   
+    <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1> HISTORIA: </h1>
+     </div>
+     <div data-role="content" align="center">
+         <div data-role="collapsible" data-content-theme="false">
+             <h1>Primeros Teléfonos Celulares </h1>
+           <div>
+            <p>Este es un ejemplo de los primeros celulares: </p>
+           <br>
+           </div>
+           <div>
+  <p class="estilo3"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','imagenes/celular5.jpg',1)"><img src="imagenes/celular6.jpg" alt="sustitucion3" name="Image3" width="399" height="300" id="Image3" align="middle"></a></p>
+  <p align="center" class="estilo3">&nbsp;</p>
+           </div>
+         </div>
+         <div data-role="collapsible" data-content-theme="false">
+             <h1> Teléfonos modernos</h1>
+           <div>
+            <p>Este es un ejemplo de celulares modernos: </p>
+           <br>
+           </div>
+           <div>
+  <p class="estilo4"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','imagenes/celular7.jpg',1)"><img src="imagenes/celular8.jpg" alt="sustitucion4" name="Image4" width="399" height="300" id="Image4" align="middle"></a></p>
+  <p align="center" class="estilo4">&nbsp;</p>
+           </div>
+         </div>
+         <div>
+            <h3 align="justify">
+El primer antecedente técnico de la telefonía móvil fueron los servicios de comunicación públicos de radiotelefonía establecidas en algunas ciudades estadounidenses durante los años 1940. Usaba un único transmisor y ofrecía seis canales de transmisión, la popularidad del servicio hizo que rápidamente quedara bloqueado, pero en 1947 AT&T dio con la solución, en lugar de utilizar un único transmisor, creó una red de transmisores de baja potencia, cada uno para un área concreta o "célula" (de ahí derivó el término teléfono celular que en muchos países es la forma de referirse a la telefonía móvil).
+            </h3>
+           </div>
+        <div data-role="footer" data-theme="b" data-position="fixed">
+          <h4> Aplicacion dos, JLVM </h4>
+        </div>
+      </div>    
+     </div> 
+     
+    <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1> CLASIFICACIÓN: </h1>
+     </div>  
+     <div align="center">
+       <h2> Existen 3 tipos de gamas: </h2>
+     </div>
+     <div data-role="content" align="center">
+         <div data-role="collapsible" data-content-theme="false">
+             <h1> Gama Baja </h1>
+           <div>
+            <p>Ejemplo de celulares gama baja: </p>
+           <br>
+           </div>
+           <div>
+  <p class="estilo5"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','imagenes/celular9.jpg',1)"><img src="imagenes/celular10.jpg" alt="sustitucion5" name="Image5" width="399" height="300" id="Image5" align="middle"></a></p>
+  <p align="center" class="estilo5">&nbsp;</p>
+           </div>
+         </div>
+         <div data-role="collapsible" data-content-theme="false">
+             <h1> Gama Media </h1>
+           <div>
+            <p>Ejemplo de celulares gama media: </p>
+           <br>
+           </div>
+           <div>
+  <p class="estilo6"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','imagenes/celular11.jpg',1)"><img src="imagenes/celular12.jpg" alt="sustitucion6" name="Image6" width="399" height="300" id="Image6" align="middle"></a></p>
+  <p align="center" class="estilo6">&nbsp;</p>
+           </div>
+         </div>
+         <div data-role="collapsible" data-content-theme="false">
+             <h1> Gama Alta </h1>
+           <div>
+            <p>Ejemplo de celulares gama alta: </p>
+           <br>
+           </div>
+           <div >
+  <p class="estilo7"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image7','','imagenes/celular13.jpg',1)"><img src="imagenes/celular14.jpg" alt="sustitucion7" name="Image7" width="399" height="300" id="Image7" align="middle"></a></p>
+  <p align="center" class="estilo7">&nbsp;</p>
+           </div>
+         </div>
+      <div data-role="footer" data-theme="b" data-position="fixed">
+        <h4> Aplicacion dos, JLVM </h4>
+      </div>
+       </div>    
+    </div> 
+    
+   <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1> COMPAÑIAS EN MÉXICO: </h1>
+     </div>  
+     <div data-role="content" align="center">
+         <div data-role="collapsible" data-content-theme="false">
+             <h1> Telcel </h1>
+           <div>
+            <img src="imagenes/telcel.jpg" width="399" height="300">
+           <br>
+           </div>
+           <div>
+            <a href="http://www.telcel.com/">Telcel</a> 
+           </div>
+         </div>
+         <div data-role="collapsible" data-content-theme="false">
+             <h1> Movistar </h1>
+           <div>
+             <img src="imagenes/movistar.png" width="399" height="300">
+           <br>
+           </div>
+           <div>
+            <a href="http://www.movistar.com/">Movistar</a>
+           </div>
+         </div>
+          <div data-role="collapsible" data-content-theme="false">
+             <h1> Unefon</h1>
+           <div>
+             <img src="imagenes/unefon.png" width="399" height="300">
+           <br>
+           </div>
+           <div>
+            <a href="http://www.unefon.com/">Unefon</a>
+           </div>
+         </div>
+          <div data-role="collapsible" data-content-theme="false">
+             <h1> AT&T </h1>
+           <div>
+            <img src="imagenes/att.png" width="399" height="300">
+           <br>
+           </div>
+           <div>
+             <a href="http://www.att.com.mx/">AT&T </a>
+           </div>
+       </div>
+      <div data-role="footer" data-theme="b" data-position="fixed">
+        <h4> Aplicacion dos, JLVM </h4>
+      </div>
+       </div>    
+    </div>
+     
+    <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>   TELÉFONOS DEL FUTURO: </h1>
+     </div>  
+     <div data-role="content" align="center">
+         <div data-role="collapsible" data-content-theme="false">
+             <h1> ARA </h1>
+           <div>
+            <p>Proyecto Ara es el nombre en clave de una iniciativa de Google que tiene como objetivo desarrollar una plataforma de hardware libre para la creación de los teléfonos inteligentes modulares. La plataforma incluirá un marco estructural con módulos de teléfonos inteligentes a elección del propietario </p>
+           <br>
+           </div>
+           <div>
+            <img src="imagenes/celular18.jpg" width="399" height="300">
+           </div>
+         </div>
+         <div data-role="collapsible" data-content-theme="false">
+             <h1> LG Display </h1>
+           <div>
+            <p>Investigadores creen que el grafeno sustituirá al silicio y revolucionará la electrónica tal y como la conocemos.
+"Estamos trabajando en pantallas flexibles y transparentes y superficies que puedan en un futuro ser parte de teléfonos flexibles, tabletas, televisores y paneles solares" </p>
+           <br>
+           </div>
+           <div>
+            <img src="imagenes/celular17.jpg" width="399" height="300">
+           </div>
+         </div>
+          <div data-role="collapsible" data-content-theme="false">
+             <h1> Black Hole</h1>
+           <div>
+            <p>Diseñado para el año 2020, el teléfono holográfico también incorpora una base de carga, Prisma y el Agujero Negro. Tan pronto como usted abra la mano, la bola levita central para controlar las funciones en el aire. Y cuando se conecta a la base de carga, el Agujero Negro se convierte en un dispositivo de escritorio, lo que permite infinitas posibilidades para los geeks. </p>
+           <br>
+           </div>
+           <div>
+            <img src="imagenes/celular16.jpg" width="399" height="300">
+           </div>
+         </div>
+          <div data-role="collapsible" data-content-theme="false">
+             <h1> El móvil completamente transparente</h1>
+           <div>
+            <p>Un móvil completamente de vidrio (o cristal si lo desean más "elegante") y que se comporta de acuerdo al clima imperante en cada momento. Si es un día soleado la pantalla queda completamente cristalina, si está lluvioso se le forma gotas y si es un día de mucho frío el cristal se empaña, dando lugar al método de entrada con un sólo dedo. Interesante. El diseñador de éste concepto es Seunghan Song. </p>
+           <br>
+           </div>
+           <div>
+            <img src="imagenes/celular15.jpg" width="399" height="300">
+           </div>
+         </div>
+      <div data-role="footer" data-theme="b" data-position="fixed">
+        <h4> Aplicacion dos, JLVM </h4>
+      </div>
+       </div>    
+    </div>
+     
+</body>
+</html>
